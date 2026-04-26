@@ -1,0 +1,282 @@
+.navbar {
+    font-family:"Poppins", sans-serif;
+    font-size: 1.2rem;
+
+    justify-content: space-between; 
+    align-items: center; 
+   
+}
+.navbar-nav {
+  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-between;
+   
+    margin-left: auto; 
+}
+
+#navbar__logo {
+    font-size: 1.9rem; 
+     
+}
+.img-fluid {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(-7px); 
+    opacity: 0.7; 
+    z-index: -5; 
+  }
+
+.position-relative {
+    position: relative;
+    height: 800px; 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+p {
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 100px 30px;
+    background-color: #8191a3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-content: center;
+   
+}
+
+button:hover {
+    background-color: #3a4552;
+    text-decoration: underline;
+}
+
+/* Change the body color */
+.colored-div {
+    background-color: #ADD8E6; /* Light blue background */
+    
+    
+  }
+
+  .my-section {
+    background-color: #abb0b0; /* Replace with your desired color */
+    color: white; /* Text color for contrast */
+    padding: 20px; /* Optional: Add padding inside the section */
+    text-align: center; /* Optional: Center align the text */
+}
+
+.section-image {
+    background-image: url("images/Adventure-Tourism.jpg"); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 800px; /* Set the height of the section */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding around the content */
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    text-align: center; /* Center text alignment */
+}
+
+.footer {
+    background-color: #333; 
+    color: white; 
+    padding: 10px 0; 
+    font-size: 0.9rem; 
+}
+
+.footer .container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer .row {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.footer-col-1, .footer-col-3, .footer-col-4, .footer-col-5 {
+    flex: 1; 
+    padding: 10px; 
+    min-width: 200px; 
+}
+
+.footer-col-1 h3, .footer-col-3 h3, .footer-col-4 h3, .footer-col-5 h3 {
+    font-size: 1.1rem; 
+    margin-bottom: 8px; 
+}
+
+.footer ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer ul li {
+    margin-bottom: 6px; 
+}
+
+.footer ul li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 0.9rem; 
+}
+
+.footer ul li a:hover {
+    text-decoration: underline; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-col-1, .footer-col-3, .footer-col-4, .footer-col-5 {
+        text-align: center;
+        margin-bottom: 15px; 
+    }
+}
+
+
+.choose
+{
+    text-align: center;
+    background:#62e97b;
+
+}
+
+#container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #highlightFirstChild {
+    padding: 20px 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+
+  #container2 {
+    padding: 20px;
+    text-align: center; 
+  }
+
+  #hide{
+    padding: 20px 20px;
+
+  }
+
+  
+  #container3 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the div */
+#myDiv {
+    width: 100%;  /* Makes the div take full width of the parent container */
+    max-width: 1470px;  /* Optional: adds a maximum width */
+    height: auto;  /* Ensures height adjusts according to the content */
+    background-color: aquamarine;
+    padding: 20px;  /* Adds some padding inside the div */
+    box-sizing: border-box; /* Ensures padding does not affect the width */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #myDiv {
+        padding: 15px;  /* Adjust padding for smaller screens */
+    }
+
+    #myDiv p {
+        font-size: 16px;  /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #myDiv {
+        padding: 10px;  /* Further adjust padding for very small screens */
+    }
+
+    #myDiv p {
+        font-size: 14px;  /* Further adjust font size for very small screens */
+    }
+}
+
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the image */
+#destinationImage {
+    width: 50%;
+    height: auto;
+    display: block;
+   
+}
+
+.colorful-section {
+    background: linear-gradient(to right, #74ebd5, #9face6); /* Applies the gradient */
+    color: white; /* Ensures text is readable */
+    padding: 40px; /* Adds spacing inside the section */
+    border-radius: 10px; /* Smooth corners */
+    text-align: center; /* Centers the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+.center-text {
+    text-align: center;
+   
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Optional: to make sure it's centered vertically within the full viewport height */
+}
+
+
+.center-text2{
+    text-align: center;
+}
+
+
+#container2 {
+    background-image: url("file:///C:/Users/HP/Downloads/ETF%20website/images/Adventure-Tourism.jpg");
+
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Optional: keeps the background fixed during scrolling */
+    color: white; /* Optional: changes text color to white for better contrast */
+    padding: 20px; /* Optional: adds padding around the content */
+}

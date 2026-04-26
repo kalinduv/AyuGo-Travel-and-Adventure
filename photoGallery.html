@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Lankan Travel Destinations</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="navbar.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <style>
+      /* CSS manipulation */
+      .highlight {
+          background-color: rgb(209, 209, 94);
+          font-weight: bold;
+      }
+
+      .container {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      .container2 {
+          text-align: center;
+          background-color: rgb(54, 110, 126);
+          
+      }
+
+     
+      .colorful-section {
+    background: linear-gradient(to right, #74ebd5, #9face6); /* Applies the gradient */
+    color: white; /* Ensures text is readable */
+    padding: 40px; /* Adds spacing inside the section */
+    border-radius: 10px; /* Smooth corners */
+    text-align: center; /* Centers the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+      .destination {
+          margin: 20px 0;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          display: inline-block;
+          width: 45%;
+          margin-right: 5%;
+      }
+
+      .destination img {
+          width: 100%;
+          height: auto;
+      }
+
+      /* Hidden text style */
+      .hidden {
+          display: none;
+      }
+
+      .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    #galleryImage {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 20px 0;         
+}
+
+
+    
+
+    
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" id="navbar__logo">
+        <img src="GO (1).png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;" >
+        AyuGO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Destination.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="TravelTips.html">Travel Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="PhotoGallery.html">Photo Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Review.html">Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <section class="colorful-section">
+    
+  <div class="container">
+    <h1>Discover Your Next Adventure</h1>
+
+   <!-- Buttons Section -->
+   <div class="text-center my-5">
+    <h2>Discover More</h2>
+    <p>Explore the beauty of our destinations with these options:</p>
+    <a href="Destination.html" class="btn btn-primary mx-1">Explore Now</a>
+    <a href="TravelPlans.html" class="btn btn-success mx-1">Book Now</a>
+    <a href="Review.html" class="btn btn-warning mx-1">Read Reviews</a>
+  </div>
+
+
+    <!-- Row of images -->
+    <div class="row">
+
+      <div class="destination" id="destination2">
+        <h2>Temple of the Scared Tooth, Sri Lanka</h2>
+        <img src="temple.jpg"alt="Kandy, Sri Lanka">
+        <p>The Temple of the Scared Tooth Relic is a world- renowed place of worship,where the left Cannie tooth of Gautum Budda is enshired. </p>
+      </div>
+
+      <div class="destination" id="destination2">
+        <h2>Galle, Sri Lanka</h2>
+        <img src="Galle.jpg"alt="Galle, Sri Lanka">
+        <p>Walk through the colonial-era streets and experience the rich history of Galle Fort, a UNESCO World Heritage Site.</p>
+      </div>
+
+      <div class="destination" id="destination1">
+        <h2>Sigiriya, Sri Lanka</h2>
+        <img src="Elephant-back-rides-in-Sri-Lanka.jpg"alt="Sigiriya, Sri Lanka">
+        <p>Sigiriya Lion Rock is an ancient rock fortress known for its massive column of rock that reaches nearly 200 meters high.</p>
+      </div>
+
+        <div class="destination" id="destination1">
+          <h2>Explore the Scenic Beauty of Ella, Sri Lanka</h2>
+          <img src="download (17).jpg"alt="Ella, Sri Lanka">
+          <p>Experience the stunning views, tea plantations, and the iconic Nine Arches Bridge in Ella, Sri Lanka.</p>
+        </div>
+      
+      <div class="destination" id="destination2">
+        <h2>Yala National Park, Sri Lanka</h2>
+        <img src="yalajquery.jpg"alt="Yala National Park, Sri Lanka">
+        <p>Yala National Park is a huge area of forest, grassland and lagoons bordering the Indian Ocean, in southeast Sri Lanka.</p>
+      </div>
+
+      <div class="destination" id="destination2">
+        <h2>Adam's Peak, Sri Lanka</h2>
+        <img src="images.jpg"alt="Adam's Peak, Sri Lanka">
+        <p>Adam's Peak is believed to bear the footprint of Lord Buddha. </p>
+      </div>
+
+      <center>
+      <div class="destination" id="destination2">
+        <h2>Marble Beach, Sri Lanka</h2>
+        <img src="download (12).jpg"alt="Marble Beach, Sri Lanka">
+        <p>The name “Marble Beach” is derived from the fact that when the sea is calm on a clear and bright day, the surface can be seen to be shining like marble. </p>
+      </div>
+      </center>
+
+    </div>
+  </div>
+</div>
+<!--First table: Light theme with Border and shadow-->
+      <h3 class="mt-4" >Other Destinations</h3>
+      <div class="card shadow-lg p-3">
+        <table class="table table-light table-hover table-bodered">
+          <thead class="table-success">
+            <tr>
+              <th>Destination</th>
+              <th>Province</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nuwara Eliya</td>
+              <td>Central Province</td>
+              </tr>
+        
+              <tr>
+                <td>Mirissa</td>
+                <td>Southern Province</td>
+              </tr>
+        
+              <tr>
+                <td>Trincomalee</td>
+                <td>Eastern Province</td>
+              </tr>
+        
+              <tr>
+                <td>Jaffna</td>
+                <td>Northern Province</td>
+              </tr>
+        
+              <tr>
+                <td>Anuradhapura</td>
+                <td>North Central Province</td>
+              </tr>
+        
+              </tbody>
+        </div>  
+        
+
+</div>
+  <br><br><br>
+
+<!--First table: Light theme with Border and shadow-->
+<h3 class="mt-4" >Other Destinations</h3>
+<div class="card shadow-lg p-3">
+  <table class="table table-light table-hover table-bdered">
+ <!--third table: Borderd and Responsive-->
+ <h4 class="mt-4" > Estimated Budget</h4>
+ <div class="table-responsive">
+   <table class="table table-bordered">
+     <thead class="table-primary">
+       <tr>
+         <th>Destination</th>
+         <th>Budget (USD)</th>
+         <th>Activities</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+       <td>Nuwara Eliya</td>
+       <td>$80-$100 per day</td>
+       <td>Explore Horton Plains & World's end, Visit tea plantations & factories,Enjoy boating on Gregory Lake</td>
+       </tr>
+
+       <tr>
+         <td>Mirissa</td>
+         <td>$60-$100 per day</td>
+         <td>Whale Watching,Surfing at Weligama Bay </td>
+       </tr>
+
+       <tr>
+         <td>Trincomalee</td>
+         <td>$70-$170 per day</td>
+         <td>Snorkelling at Pigeon Island, Visit Koneshwaram Temple, Relax on Nilaveli Beach</td>
+       </tr>
+
+       <tr>
+         <td>Jaffna</td>
+         <td>$80-$120 per day</td>
+         <td>Explore Nallur Kandaswamy Temple, Visit Nagadeepa Island, Try authentic Jaffna cuisine</td>
+       </tr>
+
+     </tbody>
+ </div>  
+
+ </table>    
+</div>
+
+      
+<div class="container2">
+    <h1>Travel and Adventures Photo Gallery</h1>
+    <p id="message">
+      Welcome to the Travel and Adventures Photo Gallery! Here, you'll discover a stunning collection of photographs capturing the essence of exploration and adventure. From serene beaches and towering mountains to vibrant cultural festivals and hidden gems, this gallery brings to life the beauty of travel. Each image tells a story of discovery, showcasing the unique experiences and breathtaking destinations that await you. Whether you're seeking inspiration for your next trip or simply enjoy immersing yourself in the wonders of the world, this gallery is the perfect place to start. Take your time, explore every photo, and let your imagination wander to places near and far. Adventure is calling, and it's all here waiting for you!
+    </p>
+  </div>
+  
+  
+<button id="hideBtn">Hide</button>
+<button id="showBtn">Show</button><br><br><br><br>
+
+  <center>
+  <div class="content-wrapper">
+    <h1>Popular Destinations</h1>
+    <img id="galleryImage" src="download (18).jpg" alt="Default Image">
+    <button id="changeBtn">Change Image</button>
+  </div>
+  </center>
+
+  <!-- footer  -->
+
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col-1"><br><br><br>
+              <h3>Explore the World with Us <br> Your Adventure Awaits</h3>
+              Join us on thrilling journeys to breathtaking destinations. </p>
+          </div>
+          <div class="footer-col-3"><br><br><br>
+              <h3>Customer Service</h3>
+              <ul>
+                  <li>FAQs</li>
+                  <li>Traveling Details</li>
+                  <li>Bank Details</li>
+                  <li>Contact Support</li>
+              </ul>
+          </div>
+          <div class="footer-col-4"><br><br><br>
+              <h3>Legal</h3>
+              <ul>
+                  <li>Privacy Policy</li>
+                  <li>Terms & Conditions</li>
+                  <li>Terms & Conditions</li>
+                  <li>Terms & Conditions</li>
+              </ul>
+          </div>
+          <div class="footer-col-5"><br><br><br>
+              <h3>Follow Us</h3>
+              <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>YouTube</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!-- Scripts for Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Toggle title visibility
+    document.getElementById("toggleTitle").addEventListener("click", function() {
+        let title = document.getElementById("main-title");
+        title.style.display = title.style.display === "none" ? "block" : "none";
+    });
+
+    // Change text of a specific destination
+    document.querySelectorAll(".changeTextBtn").forEach(button => {
+        button.addEventListener("click", function() {
+            this.previousElementSibling.textContent = "Updated Description!";
+        });
+    });
+
+    // Add a new destination
+    document.getElementById("addDestination").addEventListener("click", function() {
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("destination");
+        newDiv.innerHTML = `
+            <h2>New Destination</h2>
+            <img src="new.jpg" alt="New Destination">
+            <p>New destination description.</p>
+        `;
+        document.querySelector(".container").appendChild(newDiv);
+    });
+</script>
+
+</body>
+</html>

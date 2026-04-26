@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus page</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" id="navbar__logo">
+            <img src="images/GO (1).png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;" >
+            Travel And Adventures</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Destination.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="TravelTips.html">Travel Tips</a></li>
+            <li class="nav-item"><a class="nav-link" href="PhotoGallery.html">Photo Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="Review.html">Review</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="container mt-5">
+        <h2 class="text-center">User Reviews</h2>
+
+        <!-- Review Form -->
+        <div class="mb-4">
+            <input type="text" id="reviewerName" class="form-control mb-2" placeholder="Your Name">
+            <textarea id="reviewText" class="form-control mb-2" rows="3" placeholder="Write your review..."></textarea>
+            <select id="reviewRating" class="form-control mb-2">
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐">⭐</option>
+            </select>
+            <button class="btn btn-primary mb-2" id="submitReview">Submit Review</button>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-success" id="viewReviews">View Reviews</button>
+                <button class="btn btn-danger" id="deleteReview">Delete Review</button>
+            </div>
+        </div>
+
+        <!-- Table 1: User Reviews -->
+         <style>
+            .user-reviews {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 900px;
+            }
+
+            .user-reviews thead tr {
+                background-color: black;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .user-reviews th,
+            .user-reviews td {
+                padding: 12px 15px;
+            }
+
+            .user-reviews tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+         </style>
+        <div class="table-responsive">
+            <table class="user-reviews" id="reviewtable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Review</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>Great experience!</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>Bob</td>
+                        <td>Loved the service.</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Charlie</td>
+                        <td>Could be better.</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-left">
+            <button id="highlightMembers" class="btn btn-info">Highlight Names</button>
+        </div>
+
+        <div class="mt-4" id="infoContainer"></div>
+      </div>
+
+    
+
+  
+      <section class="container py-5">
+        
+        
+
+
+        <!-- Table 2: Review Statistics -->
+        <style>
+            .review-statistics {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 900px;
+            }
+
+            .review-statistics thead tr {
+                background-color: black;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .review-statistics th,
+            .review-statistics td {
+                padding: 12px 15px;
+            }
+
+            .review-statistics tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+         </style>
+        <div class="table-responsive mt-5">
+            <h3>Review Statistics</h3>
+            <table class="review-statistics">
+                <thead class="table-info">
+                    <tr>
+                        <th>Total Reviews</th>
+                        <th>5-Star Reviews</th>
+                        <th>4-Star Reviews</th>
+                        <th>3-Star Reviews</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("submitReview").addEventListener("click", function() {
+            let name = document.getElementById("reviewerName").value.trim();
+            let review = document.getElementById("reviewText").value.trim();
+            let rating = document.getElementById("reviewRating").value;
+
+            if (name === "" || review === "") {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            let table = document.getElementById("reviewTable").getElementsByTagName('tbody')[0];
+            let newRow = table.insertRow();
+            newRow.innerHTML = `<td>${name}</td><td>${review}</td><td>${rating}</td>`;
+
+            document.getElementById("reviewerName").value = "";
+            document.getElementById("reviewText").value = "";
+            document.getElementById("reviewRating").value = "⭐⭐⭐⭐⭐";
+        });
+
+        document.getElementById("viewReviews").addEventListener("click", function() {
+            alert("Displaying all reviews.");
+        });
+
+        document.getElementById("deleteReview").addEventListener("click", function() {
+            let table = document.getElementById("reviewTable");
+            if (table.rows.length > 1) {
+                table.deleteRow(-1);
+                alert("Last review deleted.");
+            } else {
+                alert("No more reviews to delete.");
+            }
+        });
+
+    </script>
+
+
+    
+  
+    <div class="container py-5">
+       <div class="pro" onclick="window.location.href='photoGallery.html';">
+        <button class="btn btn-primary me-2">Learn More</button>
+      </div>   
+   </div>
+  <div class="row text-center mb-5">
+    <div class="col-md-4">
+      <img src="images/Galle-Fort.jpg" class="img-thumbnail mb-2" alt="Style 1" style="width: 90%; height: auto;">
+      
+    </div>
+    <div class="col-md-4">
+      <img src="images/io2.jpg" class="img-thumbnail mb-2" alt="Style 2" style="width: 90%; height: auto;">
+      
+    </div>
+    <div class="col-md-4">
+      <img src="images/istockphoto-1441928899-612x612.jpg" class="img-thumbnail mb-2" alt="Style 3" style="width: 90%; height: auto;">
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col-1"><br><br><br>
+                <h3>Explore the World with Us <br> Your Adventure Awaits</h3>
+                Join us on thrilling journeys to breathtaking destinations. </p>
+            </div>
+            
+           
+            <div class="footer-col-3"><br><br><br>
+                <h3>Customer Service</h3>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Traveling Details</li>
+                    <li>Bank Details</li>
+                    <li>Contact Support</li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col-4"><br><br><br>
+                <h3>Legal</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Terms & Conditions</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col-5"><br><br><br>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="About.js"></script>
+
+
+
+ <!-- Bootstrap and JS links -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

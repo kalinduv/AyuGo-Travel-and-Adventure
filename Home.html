@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Lankan Travel Destinations</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <style>
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    .highlight {
+      background-color: #fffbcc;
+      transition: background-color 0.5s;
+    }
+    .colorful-section {
+      padding: 40px;
+      background-color: #f8f9fa;
+      margin: 30px 0;
+    }
+    .enlarged {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .custom-tooltip {
+      position: absolute;
+      background-color: #555;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      z-index: 100;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" id="navbar__logo">
+        <img src="GO (1).png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
+        AyuGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Destination.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="TravelTips.html">Travel Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="PhotoGallery.html">Photo Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Review.html">Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="position-relative text-center text-white">
+        <img src="Elephant-back-rides-in-Sri-Lanka.jpg" alt="Background" class="img-fluid w-100">
+        <div class="overlay p-5">
+            <h1>FALL IN LOVE AGAIN WITH SRI LANKA</h1>
+            <p>Embark on an unforgettable journey through Sri Lanka's golden beaches, misty mountains, and ancient wonders. Experience a blend of history, culture, and nature like no other!</p>
+            <button class="btn btn-primary" id="explore-btn">Explore More</button>
+        </div>
+  </div>
+
+<div class="container my-5">
+  <h2 class="text-center" id="destinations-heading">Popular Destinations</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <img src="download (5).jpg" class="card-img-top img-thumbnail" alt="kandy">
+              <div class="card-body">
+                  <h5 class="card-title">Kandy</h5>
+                  <p class="card-text">Experience breathtaking views and thrilling hikes.</p>
+                  <a href="TravelTips.html" class="btn btn-success view-details">View Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="download (10).jpg" class="card-img-top img-thumbnail" alt="galle">
+              <div class="card-body">
+                  <h5 class="card-title">Galle</h5>
+                  <p class="card-text">Stunning views, delicious food, and warm local culture.</p>
+                  <a href="TravelTips.html" class="btn btn-warning view-details">View Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="images/sigiriya-sri-lanka.webp" class="card-img-top img-thumbnail" alt="sigiriya">
+              <div class="card-body">
+                  <h5 class="card-title">Sigiriya Rock Fortress</h5>
+                  <p class="card-text">Discover iconic landmarks and delicious cuisine.</p>
+                  <a href="TravelTips.html" class="btn btn-danger view-details">View Details</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<section class="colorful-section text-center">
+  <h1 id="discover-heading">Discover the Untouched Beauty of Sri Lanka!</h1>
+  <img id="destinationImage" src="io1.jpg" class="img-fluid rounded" alt="Destination">
+  <div class="mt-3">
+    <button id="prev-image" class="btn btn-secondary">Previous</button>
+    <button id="next-image" class="btn btn-secondary">Next</button>
+  </div>
+</section>
+
+<div class="container my-5">
+  <h2 class="text-center">Travel Guide</h2>
+  <div class="form-group">
+    <input type="text" id="location-filter" class="form-control mb-3" placeholder="Filter by location...">
+  </div>
+  <table class="table table-bordered table-striped table-hover" id="travel-guide">
+    <thead>
+      <tr>
+        <th>Location</th>
+        <th>Best Time to Visit</th>
+        <th>Key Attractions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kandy</td>
+        <td>December - April</td>
+        <td>Temple of the Tooth, Peradeniya Gardens</td>
+      </tr>
+      <tr>
+        <td>Galle</td>
+        <td>November - March</td>
+        <td>Galle Fort, Unawatuna Beach</td>
+      </tr>
+      <tr>
+        <td>Sigiriya</td>
+        <td>January - March</td>
+        <td>Sigiriya Rock Fortress, Pidurangala</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="row text-center mb-5">
+   
+      <img src="images/DOM.jpg" class="img-thumbnail mb-2" alt="Style 1">
+
+    </div>
+
+<div class="custom-tooltip" id="tooltip"></div>
+
+<div class="footer bg-dark text-white p-4 text-center">
+    <p>Explore the World with Us - Your Adventure Awaits</p>
+    <p>&copy; 2025 AyuGO. All Rights Reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+$(document).ready(function() {
+    // 1. DOM Traversal - Example 1: Finding all cards and adding hover effects
+    $(".row").find(".card").hover(
+        function() {
+            $(this).addClass("shadow-lg");
+        },
+        function() {
+            $(this).removeClass("shadow-lg");
+        }
+    );
+    
+    // 1. DOM Traversal - Example 2: Using parent() to modify parent elements
+    $(".view-details").click(function(e) {
+        e.preventDefault();
+        // Get the card body and add a class to it
+        $(this).parent().css("background-color", "#f8f9fa");
+        
+        // Get the destination name from the card title
+        var destination = $(this).parent().find(".card-title").text();
+        alert("You selected: " + destination + ". More details coming soon!");
+    });
+    
+    // 1. DOM Traversal - Example 3: Using siblings to interact with related elements
+    $(".card-title").click(function() {
+        // Find the sibling paragraph and emphasize its text
+        $(this).siblings(".card-text").css("font-weight", "bold").fadeOut(300).fadeIn(300);
+    });
+    
+    // 2. DOM Modification - Example 1: Changing text content
+    $("#destinations-heading").click(function() {
+        $(this).text("Incredible Places to Visit in Sri Lanka");
+        $(this).css("color", "#007bff");
+    });
+    
+    // 2. DOM Modification - Example 2: Adding new elements
+    $("#explore-btn").click(function() {
+        // Append a new notification element to the overlay
+        if (!$("#notification-msg").length) {
+            $(this).after('<p id="notification-msg" class="mt-3">Click on destinations below to learn more!</p>');
+        }
+    });
+    
+    // 2. DOM Modification - Example 3: Modifying table data
+    $("#travel-guide tbody tr").click(function() {
+        var location = $(this).find("td:first").text();
+        var bestTime = $(this).find("td:eq(1)").text();
+        var newContent = location + " is best visited during " + bestTime + ". Book now!";
+        
+        // Create or update recommendation row
+        if ($("#recommendation-row").length) {
+            $("#recommendation-row td").text(newContent);
+        } else {
+            $("#travel-guide tbody").append('<tr id="recommendation-row"><td colspan="3" class="text-center bg-info text-white">' + newContent + '</td></tr>');
+        }
+    });
+    
+    // 3. DOM Attribute Modification - Example 1: Changing image source attributes
+    var images = ["io1.jpg", "download (5).jpg", "download (10).jpg"];
+    var currentImage = 0;
+    
+    $("#next-image").click(function() {
+        currentImage = (currentImage + 1) % images.length;
+        $("#destinationImage").attr("src", images[currentImage]);
+        $("#destinationImage").attr("data-index", currentImage);
+    });
+    
+    $("#prev-image").click(function() {
+        currentImage = (currentImage - 1 + images.length) % images.length;
+        $("#destinationImage").attr("src", images[currentImage]);
+        $("#destinationImage").attr("data-index", currentImage);
+    });
+    
+    // 3. DOM Attribute Modification - Example 2: Adding and toggling classes
+    $("#discover-heading").click(function() {
+        $(this).toggleClass("text-danger");
+    });
+    
+    // 3. DOM Attribute Modification - Example 3: Setting data attributes
+    $(".nav-link").each(function(index) {
+        $(this).attr("data-index", index);
+        $(this).attr("data-section", $(this).text().toLowerCase());
+    });
+    
+    // 4. CSS Manipulation - Example 1: Changing text color and background
+    $("th").click(function() {
+        $(this).css("background-color", "#007bff");
+        $(this).css("color", "white");
+    });
+    
+    // 4. CSS Manipulation - Example 2: Creating animations with CSS
+    $("#destinationImage").click(function() {
+        $(this).toggleClass("enlarged");
+    });
+    
+    // 4. CSS Manipulation - Example 3: Modifying multiple CSS properties
+    $(".navbar-brand").hover(
+        function() {
+            $(this).css({
+                "color": "#17a2b8",
+                "font-size": "1.5rem",
+                "letter-spacing": "1px",
+                "transition": "all 0.3s ease"
+            });
+        },
+        function() {
+            $(this).css({
+                "color": "",
+                "font-size": "",
+                "letter-spacing": "",
+                "transition": "all 0.3s ease"
+            });
+        }
+    );
+    
+    // 5. JavaScript Effects - Example 1: Fade effects
+    $(".btn-primary").click(function() {
+        $(".overlay p").fadeOut(500, function() {
+            $(this).text("Sri Lanka awaits you! Explore our top destinations below.").fadeIn(500);
+        });
+    });
+    
+    // 5. JavaScript Effects - Example 2: Slide effects
+    $(".footer p").click(function() {
+        $(this).slideUp(300).slideDown(300);
+    });
+    
+    // 5. JavaScript Effects - Example 3: Custom animation sequence
+    $("#discover-heading").dblclick(function() {
+        $(this).fadeOut(400)
+               .queue(function() {
+                   $(this).text("Experience Sri Lanka Like Never Before!").dequeue();
+               })
+               .fadeIn(400)
+               .animate({letterSpacing: "2px"}, 500)
+               .animate({letterSpacing: "0px"}, 500);
+    });
+    
+    // 6. HTML Events - Example 1: Mouse events
+    $("tr").mouseover(function() {
+        $(this).addClass("highlight");
+    }).mouseout(function() {
+        $(this).removeClass("highlight");
+    });
+    
+    // 6. HTML Events - Example 2: Form events for filtering
+    $("#location-filter").on("input", function() {
+        var value = $(this).val().toLowerCase();
+        $("#travel-guide tbody tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+    
+    // 6. HTML Events - Example 3: Custom tooltip on hover
+    $(".card-title").hover(
+        function(e) {
+            var text = "Click to learn more about " + $(this).text();
+            $("#tooltip").text(text).css({
+                "left": e.pageX + 10,
+                "top": e.pageY + 10
+            }).show();
+        },
+        function() {
+            $("#tooltip").hide();
+        }
+    ).mousemove(function(e) {
+        $("#tooltip").css({
+            "left": e.pageX + 10,
+            "top": e.pageY + 10
+        });
+    });
+});
+</script>
+</body>
+</html>

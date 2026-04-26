@@ -1,0 +1,95 @@
+
+
+.footer {
+    background-color: #333; 
+    color: white;
+    padding: 10px 0; 
+    font-size: 0.9rem; 
+}
+
+.footer .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.footer-col-1, .footer-col-3, .footer-col-4, .footer-col-5 {
+    flex: 1; 
+    padding: 10px; 
+    min-width: 200px;
+}
+
+.footer-col-1 h3, .footer-col-3 h3, .footer-col-4 h3, .footer-col-5 h3 {
+    font-size: 1.1rem; 
+    margin-bottom: 8px; 
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer ul li {
+    margin-bottom: 6px; 
+}
+
+.footer ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+}
+
+.footer ul li a:hover {
+    text-decoration: underline; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-col-1, .footer-col-3, .footer-col-4, .footer-col-5 {
+        text-align: center; 
+        margin-bottom: 15px;
+    }
+}
+
+
+.choose
+{
+    text-align: center;
+    background:#3c5440;
+
+}
+body {
+    background-image: url('images/sl4.jpg'); /* Path to your background image */
+    background-size: cover;          /* Ensures the image covers the entire page */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    background-position: center;     /* Centers the image */
+    background-attachment: fixed;    /* Keeps the background fixed while scrolling */
+    color: #ffffff;                  /* Optional: Sets the text color to white for better contrast */
+  }
+  
+  #container2 {
+    padding: 20px;
+    text-align: center;
+  }
+  .packages-table {
+    transition: background-color 0.3s ease-in-out;
+  }
+  .container2 {
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 20px 0;         
+}
