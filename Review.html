@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Character encoding for supporting special characters -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aboutus page</title>
-    <link rel="stylesheet" href="About.css">
+    <title>Review page</title>
+
+    <!-- External CSS file for footer and page styling -->
+    <link rel="stylesheet" href="Review.css">
+
+    <!-- External CSS file for navigation bar styling -->
     <link rel="stylesheet" href="navbar.css">
+
+    <!-- jQuery library used for DOM manipulation and event handling -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap CSS framework -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap icons used for Edit and Delete icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#" id="navbar__logo">
             <img src="images/GO (1).png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;" >
@@ -19,6 +36,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- Navigation links -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="Destination.html">Destinations</a></li>
@@ -47,11 +66,11 @@
             <button class="btn btn-primary mb-2" id="submitReview">Submit Review</button>
             <div class="d-flex justify-content-between">
                 <button class="btn btn-success" id="viewReviews">View Reviews</button>
-                <button class="btn btn-danger" id="deleteReview">Delete Review</button>
+                
             </div>
         </div>
 
-        <!-- Table 1: User Reviews -->
+        <!-- CSS styling for User Reviews table -->
          <style>
             .user-reviews {
                 border-collapse: collapse;
@@ -84,29 +103,17 @@
                         <th>Name</th>
                         <th>Review</th>
                         <th>Rating</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Alice</td>
-                        <td>Great experience!</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr class="table-success">
-                        <td>Bob</td>
-                        <td>Loved the service.</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr class="table-danger">
-                        <td>Charlie</td>
-                        <td>Could be better.</td>
-                        <td>⭐⭐⭐</td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
 
         <div class="text-left">
+            <!-- Button to highlight reviewer names -->
             <button id="highlightMembers" class="btn btn-info">Highlight Names</button>
         </div>
 
@@ -121,7 +128,7 @@
         
 
 
-        <!-- Table 2: Review Statistics -->
+        <!-- CSS styling for Review Statistics table -->
         <style>
             .review-statistics {
                 border-collapse: collapse;
@@ -160,57 +167,24 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>12</td>
-                        <td>6</td>
-                        <td>5</td>
-                        <td>1</td>
+                        <!-- IDs are used by JavaScript to update statistics dynamically -->
+                        <td id="totalReviews">0</td>
+                        <td id="fiveStar">0</td>
+                        <td id="fourStar">0</td>
+                        <td id="threeStar">0</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 
+    <!-- Bootstrap JavaScript bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById("submitReview").addEventListener("click", function() {
-            let name = document.getElementById("reviewerName").value.trim();
-            let review = document.getElementById("reviewText").value.trim();
-            let rating = document.getElementById("reviewRating").value;
-
-            if (name === "" || review === "") {
-                alert("Please fill out all fields.");
-                return;
-            }
-
-            let table = document.getElementById("reviewTable").getElementsByTagName('tbody')[0];
-            let newRow = table.insertRow();
-            newRow.innerHTML = `<td>${name}</td><td>${review}</td><td>${rating}</td>`;
-
-            document.getElementById("reviewerName").value = "";
-            document.getElementById("reviewText").value = "";
-            document.getElementById("reviewRating").value = "⭐⭐⭐⭐⭐";
-        });
-
-        document.getElementById("viewReviews").addEventListener("click", function() {
-            alert("Displaying all reviews.");
-        });
-
-        document.getElementById("deleteReview").addEventListener("click", function() {
-            let table = document.getElementById("reviewTable");
-            if (table.rows.length > 1) {
-                table.deleteRow(-1);
-                alert("Last review deleted.");
-            } else {
-                alert("No more reviews to delete.");
-            }
-        });
-
-    </script>
-
+    
 
     
-  
     <div class="container py-5">
+        <!-- Learn More button redirects user to Photo Gallery page -->
        <div class="pro" onclick="window.location.href='photoGallery.html';">
         <button class="btn btn-primary me-2">Learn More</button>
       </div>   
@@ -230,6 +204,7 @@
     </div>
   </div>
 
+  <!-- Website footer -->
   <div class="footer">
     <div class="container">
         <div class="row">
@@ -275,21 +250,23 @@
     </div>
 </div>
 
-<script src="About.js"></script>
+
 
 
 
  <!-- Bootstrap and JS links -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- External JavaScript file handling all review functionalities -->
+<script src="review.js"></script>
+
 </body>
 </html>
 
 
 
-</body>
-</html>
+
 
 
 
