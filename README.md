@@ -1,4 +1,4 @@
-🌍 AyuGo - Travel and Adventure
+ AyuGo - Travel and Adventure
 
 AyuGo is a responsive travel and adventure website developed as a university group project to promote tourism and provide travelers with useful information about destinations, travel tips, and user experiences.
 
@@ -10,28 +10,28 @@ The project was developed using front-end web technologies with an emphasis on r
 
 ⸻
 
-✨ Features
+ Features
 
-🏠 Home Page
+ Home Page
 
 * Attractive landing page
 * Interactive navigation bar
 * Destination highlights
 * Image-based content sections
 
-📍 Destinations Page
+ Destinations Page
 
 * Information about popular travel destinations
 * Dynamic image navigation
 * User-friendly layout
 
-🧳 Travel Tips Page
+ Travel Tips Page
 
 * Essential travel guidelines
 * Helpful recommendations for travelers
 * Responsive content presentation
 
-🖼️ Photo Gallery
+ Photo Gallery
 
 * Collection of destination photographs
 * Thumbnail-based image display
@@ -56,7 +56,7 @@ This module demonstrates CRUD operations, DOM manipulation, event delegation, an
 
 ⸻
 
-🛠 Technologies Used
+ Technologies Used
 
 * HTML
 * CSS
@@ -67,7 +67,7 @@ This module demonstrates CRUD operations, DOM manipulation, event delegation, an
 
 ⸻
 
-📚 Concepts Demonstrated
+ Concepts Demonstrated
 
 * DOM Manipulation
 * Event Handling
@@ -78,7 +78,7 @@ This module demonstrates CRUD operations, DOM manipulation, event delegation, an
 
 ⸻
 
-👨‍💻 Authors
+ Authors
 
 Kalindu Vidmal
 
@@ -86,6 +86,7 @@ Kalindu Vidmal
 * Review Statistics
 * CRUD Functionalities
 
+Other Authors
 
 Januka Thathsara
 Savinthi De Silva
