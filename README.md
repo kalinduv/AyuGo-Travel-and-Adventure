@@ -94,17 +94,3 @@ Shavini Imasha
 Sachini De Zoysa
 
 
-
-⸻
-
-🎓 Academic Information
-
-This project was developed as part of the coursework requirements for the Higher Diploma in Information Technology program.
-
-Institution: SLIIT City Uni
-
-Affiliated University: University of Bedfordshire
-
-⸻
-
-
